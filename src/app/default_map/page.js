@@ -6,8 +6,8 @@ const page = () => {
   return (
     <Map
       initialViewState={{
-        longitude: 90.37839,
-        latitude: 23.76663,
+        longitude: -122.4,
+        latitude: 37.8,
         zoom: 14
       }}
       style={{width: "100%", height: "98vh"}}
