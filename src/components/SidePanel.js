@@ -17,6 +17,7 @@ const SidePanel = () => {
           mode="inline"
           defaultSelectedKeys={['1']}
           style={{height:"98vh"}}
+          
           items={[
             {
               key: '1',
@@ -36,11 +37,15 @@ const SidePanel = () => {
             },
             {
               key: '5',
-              label: <Link href="/popup">Popup</Link>,
+              label: <Link href="/navigation-control">Navigation Control</Link>,
             },
             {
               key: '6',
-              label: <Link href="/route">Route</Link>,
+              label: <Link href="/popup">Popup</Link>,
+            },
+            {
+              key: '7',
+              label: <Link href="/source">Source</Link>,
             }
           ]}
         />

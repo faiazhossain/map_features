@@ -1,5 +1,5 @@
-'use client'
-import Map, { Marker } from "react-map-gl/maplibre";
+"use client";
+import Map, { NavigationControl } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 
 const ReactMapGL = () => {
@@ -13,8 +13,8 @@ const ReactMapGL = () => {
       style={{ width: "100%", height: "98vh" }}
       mapStyle="http://localhost:3000/api/map"
     >
-      <Marker longitude={90.36401} latitude={23.82378} draggable anchor="bottom" />
-      </Map>
+      <NavigationControl />
+    </Map>
   );
 };
 
