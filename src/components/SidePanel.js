@@ -1,5 +1,5 @@
 "use client"
-import { Button, Layout, Menu, theme } from 'antd';
+import { Layout, Menu, theme } from 'antd';
 import Link from 'next/link';
 const { Header, Sider, Content } = Layout;
 import React, { useState } from 'react'
@@ -30,6 +30,18 @@ const SidePanel = () => {
               key: '3',
               label: <Link href="/layer_visibility">Layer Visibility</Link>,
             },
+            {
+              key: '4',
+              label: <Link href="/marker">Marker</Link>,
+            },
+            {
+              key: '5',
+              label: <Link href="/popup">Popup</Link>,
+            },
+            {
+              key: '6',
+              label: <Link href="/route">Route</Link>,
+            }
           ]}
         />
       </Sider>

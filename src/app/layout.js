@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import SidePanel from "../../components/SidePanel";
-
+import SidePanel from "../components/SidePanel";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Create Next App",
@@ -11,12 +11,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{display:'flex'}} className={inter.className}>
-        <SidePanel/>
-        <div style={{width:'100%',height:"100%"}}>
-        {children}
-        </div>
-        </body>
+      <body className={inter.className}>
+        <AntdRegistry>
+          <div style={{ display: "flex" }}>
+            <SidePanel />
+            <div style={{ width: "100%", height: "100%" }}>{children}</div>
+          </div>
+        </AntdRegistry>
+      </body>
     </html>
   );
 }
