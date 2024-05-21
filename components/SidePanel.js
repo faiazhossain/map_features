@@ -10,13 +10,13 @@ const SidePanel = () => {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
   return (
-    <Sider trigger={null} collapsible collapsed={collapsed}>
+    <Sider trigger={null} collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
         <div className="demo-logo-vertical" />
         <Menu
           theme="dark"
           mode="inline"
           defaultSelectedKeys={['1']}
-          style={{height:"90vh"}}
+          style={{height:"98vh"}}
           items={[
             {
               key: '1',
@@ -28,7 +28,7 @@ const SidePanel = () => {
             },
             {
               key: '3',
-              label: 'nav 3',
+              label: <Link href="/layer_visibility">Layer Visibility</Link>,
             },
           ]}
         />
