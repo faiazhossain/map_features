@@ -11,7 +11,7 @@ const ReactMapGL = ({url}) => {
         zoom: 14,
       }}
       style={{ width: "100%", height: "98vh" }}
-      mapStyle="http://localhost:3000/api/map"
+      mapStyle="http://localhost:3000/api/map-style"
     />
   );
 };
